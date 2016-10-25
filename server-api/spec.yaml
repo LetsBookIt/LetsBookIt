@@ -1,0 +1,28 @@
+swagger: '2.0'
+info:
+  description: Booking Service 
+  version: 0.0.1
+  title: Let`s Book It
+#  termsOfService: 'http://letsbookit.com/terms/'
+  contact:
+    name:  <develop@letsbookit.com>
+  #license:
+   # name: 
+    #url: 'http://www.letsbookit.ru/license'
+host: 'letsbookit.com' 
+basePath: /api/1.0
+schemes:
+  - http
+paths:
+  /service:
+    get:
+      summary: Summary info
+      description: 'Summary info abount service'
+      operationId: getServiceInfo
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Ok
